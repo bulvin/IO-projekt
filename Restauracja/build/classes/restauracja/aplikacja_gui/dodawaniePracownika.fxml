@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="477.0" prefWidth="334.0" style="-fx-background-color: #ff8a65;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restauracja.aplikacja_gui.DodawaniePracownikaController">
+   <children>
+      <Text fill="WHITE" layoutX="8.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dodawanie Pracownika" textAlignment="CENTER" wrappingWidth="320.13671875">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nazwaField" layoutX="65.0" layoutY="91.0" prefHeight="30.0" prefWidth="206.0" promptText="Nazwa użytkownika">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="hasloField" layoutX="65.0" layoutY="144.0" prefHeight="25.0" prefWidth="206.0" promptText="Hasło" />
+      <TextField fx:id="nazwiskoField" layoutX="65.0" layoutY="260.0" prefHeight="25.0" prefWidth="206.0" promptText="Nazwisko" />
+      <TextField fx:id="imieField" layoutX="65.0" layoutY="200.0" prefHeight="25.0" prefWidth="206.0" promptText="Imie" />
+      <ComboBox fx:id="comboTyp" layoutX="65.0" layoutY="321.0" prefHeight="25.0" prefWidth="206.0" promptText="--Typ pracownika--" style="-fx-background-color: #ffddc1;" />
+      <Button fx:id="buttonZapisz" layoutX="65.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#zapisz" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #ffddc1; -fx-border-radius: 15px;" text="Zapisz" />
+      <Button fx:id="btn" layoutX="182.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#zamknij" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #ffddc1;" text="Zamknij" />
+   </children>
+</AnchorPane>

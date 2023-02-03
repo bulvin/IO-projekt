@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="391.0" prefWidth="332.0" style="-fx-background-color: #ff8a65;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restauracja.aplikacja_gui.DodawanieMenuController">
+   <children>
+      <Text fill="WHITE" layoutX="47.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danie" textAlignment="CENTER" wrappingWidth="237.13671875">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Text>
+      <TextField fx:id="przedmiotField" layoutX="68.0" layoutY="113.0" prefHeight="32.0" prefWidth="182.0" promptText="Nazwa dania" />
+      <TextField fx:id="cenaField" layoutX="68.0" layoutY="170.0" prefHeight="32.0" prefWidth="182.0" promptText="Cena  zł" />
+      <Button fx:id="btnZapisz" layoutX="68.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#zapisz" prefHeight="53.0" prefWidth="35.0" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" size="60" textAlignment="CENTER" wrappingWidth="59.2857141494751" />
+         </graphic></Button>
+      <ComboBox fx:id="comboKategoria" layoutX="68.0" layoutY="234.0" prefHeight="32.0" prefWidth="182.0" promptText="--Kategoria--" style="-fx-background-color: #ffddc1;" />
+      <Button fx:id="btnZamknij" layoutX="174.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#zamknij" prefHeight="68.0" prefWidth="76.0" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIconView fill="#ff0d0d" glyphName="TIMES_CIRCLE" size="50" />
+         </graphic></Button>
+   </children>
+</AnchorPane>

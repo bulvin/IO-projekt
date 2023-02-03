@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="402.0" prefWidth="444.0" style="-fx-background-color: #ff8a65;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restauracja.aplikacja_gui.DodawanieMenuController">
+   <children>
+      <Text fill="WHITE" layoutX="87.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danie" textAlignment="CENTER" wrappingWidth="237.13671875">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Text>
+      <TextField fx:id="przedmiotField" layoutX="174.0" layoutY="113.0" prefHeight="32.0" prefWidth="182.0" promptText="Nazwa dania">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="cenaField" layoutX="174.0" layoutY="173.0" prefHeight="32.0" prefWidth="182.0" promptText="Cena  zł">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnZapisz" layoutX="136.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#zapisz" prefHeight="53.0" prefWidth="35.0" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" size="60" textAlignment="CENTER" wrappingWidth="59.2857141494751" />
+         </graphic></Button>
+      <ComboBox fx:id="comboKategoria" layoutX="174.0" layoutY="230.0" prefHeight="32.0" prefWidth="182.0" promptText="--Kategoria--" style="-fx-background-color: #ffddc1;" />
+      <Button fx:id="btnZamknij" layoutX="280.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#zamknij" prefHeight="68.0" prefWidth="76.0" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIconView fill="#ff0d0d" glyphName="TIMES_CIRCLE" size="50" />
+         </graphic></Button>
+      <Label layoutX="36.0" layoutY="114.0" text="Nazwa Dania" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="174.0" text="Cena" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="230.0" text="Kategoria" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
