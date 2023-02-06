@@ -50,7 +50,7 @@ public class DodawanieMenuController implements Initializable {
                 alert.setHeaderText("Nieudane dodanie przedmiotu");
                 alert.showAndWait();
             }
-            else if(menuDAO.przedmiotPoNazwie(nazwa) != null){
+            else if(menuDAO.przedmiotPoNazwie(nazwa) != null && uniqueId()){
             Alert alert = new Alert(Alert.AlertType.WARNING,"To danie już znajduje się na liście");
             alert.setHeaderText("Nieudane dodanie przedmiotu");
             alert.showAndWait();
@@ -97,7 +97,14 @@ public class DodawanieMenuController implements Initializable {
         return  cena.matches("\\d+(\\.\\d{1,2})?");
     }
 
-
+    private boolean uniqueId(){
+        for(Menu menu : menuDAO.zaladujMenu()){
+            if(przedmiot.getId_przedmiotu() == menu.getId_przedmiotu()){
+                return false;
+            }
+        }
+        return true;
+    }
 
 
     @Override

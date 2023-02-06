@@ -97,7 +97,7 @@ public class DodawaniePracownikaController implements Initializable {
             alert.setHeaderText("Imię jest niepoprawne.");
             alert.showAndWait();
         }
-        else if(pracownik1 != null){
+        else if(pracownik1 != null && pracownik1.getId_pracownika() != pracownik.getId_pracownika()){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(dialogStage);
             alert.setTitle("Nie udało się dodać pracownika");
